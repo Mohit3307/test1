@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EstateFinder - Find Your Dream Property</title>
   <style>
-    /* General Styles */
+    /* Existing styles remain unchanged until hero section */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -22,7 +22,6 @@
       color: inherit;
     }
 
-    /* NavBar */
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -61,7 +60,7 @@
       font-weight: bold;
     }
 
-    /* Hero Section */
+    /* Modified Hero Section */
     .hero {
       background-image: url('https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2024/01/17131521/first-home-buyer-advice-inspiration.jpg');
       background-size: cover;
@@ -101,7 +100,44 @@
       cursor: pointer;
     }
 
-    /* Footer */
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-explore, .btn-list {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-explore:hover, .btn-list:hover {
+      background-color: #0056b3;
+    }
+
+    /* Rest of the styles remain unchanged until footer */
+    .featured-listings { /* ... */ }
+    .listings-grid { /* ... */ }
+    .property-card { /* ... */ }
+    .popular-localities { /* ... */ }
+    .localities-grid { /* ... */ }
+    .locality-card { /* ... */ }
+    .services { /* ... */ }
+    .services-grid { /* ... */ }
+    .service-card { /* ... */ }
+    .testimonials { /* ... */ }
+    .testimonials-grid { /* ... */ }
+    .testimonial-card { /* ... */ }
+    .blog { /* ... */ }
+    .blog-grid { /* ... */ }
+    .blog-card { /* ... */ }
+
+    /* Modified Footer */
     .footer {
       background-color: #333;
       color: white;
@@ -134,13 +170,17 @@
 
     .social-icons {
       display: flex;
-      gap: 10px;
+      gap: 15px;
     }
 
     .social-icons img {
       width: 24px;
       height: 24px;
-      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
     }
 
     .footer-bottom {
@@ -170,7 +210,7 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Modified Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <h1>Find Your Dream Property Today</h1>
@@ -178,10 +218,126 @@
         <input type="text" placeholder="Enter location, city, or area">
         <button>Search</button>
       </div>
+      <div class="cta-buttons">
+        <a href="#" class="btn-explore">Explore Properties</a>
+        <a href="#" class="btn-explore">Explore Properties</a>
+        <a href="#" class="btn-list">List Your Property</a>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Featured Listings -->
+  <section class="featured-listings">
+    <h2>Featured Properties</h2>
+    <div class="listings-grid">
+      <div class="property-card">
+        <img src="https://dressyourhome.in/wp-content/uploads/IMG-3220.jpg" alt="Property 1">
+        <h3>2 BHK Apartment</h3>
+        <p>Mumbai, ₹1.2 Cr</p>
+        <a href="#" class="btn-view">View Details</a>
+      </div>
+      <div class="property-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLO_I9s4ei9hOwKS70Vlf-WY6YTgdjqBxO2A&s" alt="Property 2">
+        <h3>3 BHK Villa</h3>
+        <p>Bangalore, ₹2.5 Cr</p>
+        <a href="#" class="btn-view">View Details</a>
+      </div>
+      <div class="property-card">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/555071355.jpg?k=3e1238b8174e87f5a4bc5a4641dbbf34fdd2f010e4ba973d609324dafaab95f5&o=&hp=1" alt="Property 3">
+        <h3>3 BHK House</h3>
+        <p>Delhi, ₹3 Cr</p>
+        <a href="#" class="btn-view">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Localities -->
+  <section class="popular-localities">
+    <h2>Explore Popular Localities</h2>
+    <div class="localities-grid">
+      <div class="locality-card">
+        <img src="https://picsum.photos/300/200?random=4" alt="Locality 1">
+        <h3>Andheri, Mumbai</h3>
+        <p>Avg. Price: ₹1.5 Cr</p>
+        <a href="#" class="btn-view">View Listings</a>
+      </div>
+      <div class="locality-card">
+        <img src="https://picsum.photos/300/200?random=5" alt="Locality 2">
+        <h3>Whitefield, Bangalore</h3>
+        <p>Avg. Price: ₹2 Cr</p>
+        <a href="#" class="btn-view">View Listings</a>
+      </div>
+      <div class="locality-card">
+        <img src="https://picsum.photos/300/200?random=6" alt="Locality 3">
+        <h3>Gurgaon, Delhi</h3>
+        <p>Avg. Price: ₹2.8 Cr</p>
+        <a href="#" class="btn-view">View Listings</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://picsum.photos/100/100?random=7" alt="Home Loans">
+        <h3>Home Loans</h3>
+        <p>Get the best home loan rates.</p>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+      <div class="service-card">
+        <img src="https://picsum.photos/100/100?random=8" alt="Legal Assistance">
+        <h3>Legal Assistance</h3>
+        <p>Expert legal advice for property transactions.</p>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+      <div class="service-card">
+        <img src="https://picsum.photos/100/100?random=9" alt="Property Valuation">
+        <h3>Property Valuation</h3>
+        <p>Accurate property valuation services.</p>
+        <a href="#" class="btn-learn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="https://picsum.photos/80/80?random=10" alt="User 1">
+        <p>"EstateFinder helped me find my dream home quickly!"</p>
+        <h4>- John Doe</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://picsum.photos/80/80?random=11" alt="User 2">
+        <p>"Great service and support throughout the process."</p>
+        <h4>- Jane Smith</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="blog">
+    <h2>Real Estate Insights</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="https://picsum.photos/300/200?random=12" alt="Blog 1">
+        <h3>Top 5 Tips for First-Time Home Buyers</h3>
+        <p>Learn how to make the right decision.</p>
+        <a href="#" class="btn-read">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="https://picsum.photos/300/200?random=13" alt="Blog 2">
+        <h3>How to Choose the Right Neighborhood</h3>
+        <p>Find the perfect location for your family.</p>
+        <a href="#" class="btn-read">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modified Footer -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-section">
@@ -196,20 +352,20 @@
       <div class="footer-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="https://www.instagram.com" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+          <a href="https://www.facebook.com/estatefinder" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
           </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+          <a href="https://www.instagram.com/estatefinder" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
           </a>
-          <a href="https://www.youtube.com" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+          <a href="https://www.youtube.com/estatefinder" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3938/3938026.png" alt="YouTube">
           </a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 EstateFinder. All rights reserved.</p>
+      <p>© 2023 EstateFinder. All rights reserved.</p>
     </div>
   </footer>
 </body>
